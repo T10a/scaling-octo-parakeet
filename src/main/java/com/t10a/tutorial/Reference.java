@@ -12,7 +12,8 @@ public class Reference
 	
 	public static enum TutorialItems
 	{
-		CHEESE("cheese", "itemCheese");
+		CHEESE("cheese", "itemCheese"),
+		CRACKER("cracker", "itemCracker");
 		
 		private String unlocalizedName;
 		private String registryName;
