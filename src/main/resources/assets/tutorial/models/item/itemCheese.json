@@ -1,7 +1,7 @@
 {
     "parent": "builtin/generated",
     "textures": {
-        "layer0": "tutorial:items/cheese.png"
+        "layer0": "tutorial:items/cheese"
     },
     "display": {
         "thirdperson": {
