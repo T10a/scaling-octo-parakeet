@@ -1,5 +1,6 @@
 package com.t10a.tutorial;
 
+import com.t10a.tutorial.init.ModItems;
 import com.t10a.tutorial.proxy.CommonProxy;
 
 import net.minecraftforge.fml.common.Mod;
@@ -23,13 +24,15 @@ public class Tutorial
 	public void preInit(FMLPreInitializationEvent event)
 	{
 		System.out.println("Pre Initialisation!");
-		//This spot is where I put block & item initialization code!
+		ModItems.init();
+		ModItems.register();
 	}
 	
 	@EventHandler
 	public void Init(FMLInitializationEvent event)
 	{
 		System.out.println("Initialisation!");
+		proxy.init();
 	}
 	
 	@EventHandler

@@ -9,4 +9,28 @@ public class Reference
 	
 	public static final String CLIENT_PROXY_CLASS = "com.t10a.tutorial.proxy.ClientProxy";
 	public static final String SERVER_PROXY_CLASS = "com.t10a.tutorial.proxy.ServerProxy";
+	
+	public static enum TutorialItems
+	{
+		CHEESE("cheese", "itemCheese");
+		
+		private String unlocalizedName;
+		private String registryName;
+		
+		TutorialItems(String unlocalizedName, String registryName) 
+		{
+			this.unlocalizedName = unlocalizedName;
+			this.registryName = registryName;
+		}
+		
+		public String getRegistryName() 
+		{
+			return registryName;
+		}
+		
+		public String getUnlocalizedName() 
+		{
+			return unlocalizedName;
+		}
+	}
 }
