@@ -1,5 +1,6 @@
 package com.t10a.tutorial;
 
+import com.t10a.tutorial.init.ModBlocks;
 import com.t10a.tutorial.init.ModItems;
 import com.t10a.tutorial.proxy.CommonProxy;
 
@@ -26,6 +27,9 @@ public class Tutorial
 		System.out.println("Pre Initialisation!");
 		ModItems.init();
 		ModItems.register();
+		
+		ModBlocks.init();
+		ModBlocks.register();
 	}
 	
 	@EventHandler

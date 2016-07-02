@@ -1,5 +1,6 @@
 package com.t10a.tutorial.proxy;
 
+import com.t10a.tutorial.init.ModBlocks;
 import com.t10a.tutorial.init.ModItems;
 
 public class ClientProxy implements CommonProxy
@@ -9,6 +10,7 @@ public class ClientProxy implements CommonProxy
 	public void init() 
 	{
 		ModItems.registerRenders();
+		ModBlocks.registerRenders();
 	}
 
 }

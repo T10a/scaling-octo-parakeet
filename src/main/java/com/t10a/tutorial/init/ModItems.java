@@ -1,3 +1,4 @@
+
 package com.t10a.tutorial.init;
 
 import com.t10a.tutorial.Reference;
