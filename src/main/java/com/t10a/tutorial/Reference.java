@@ -37,7 +37,8 @@ public class Reference
 	
 	public static enum TutorialBlocks
 	{
-		CHEESE("cheese", "BlockCheese");
+		CHEESE("cheese", "BlockCheese"),
+		JAR("jar", "BlockJar");
 		
 		private String unlocalizedName;
 		private String registryName;
