@@ -13,7 +13,8 @@ public class Reference
 	public static enum TutorialItems
 	{
 		CHEESE("cheese", "itemCheese"),
-		CRACKER("cracker", "itemCracker");
+		CRACKER("cracker", "itemCracker"),
+		CHEESE_AND_CRACKER("cheese_and_cracker", "ItemCheeseCracker");
 		
 		private String unlocalizedName;
 		private String registryName;

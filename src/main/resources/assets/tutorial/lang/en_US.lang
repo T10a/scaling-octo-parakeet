@@ -1,4 +1,5 @@
 item.cheese.name=Cheese
 item.cracker.name=Cracker
+item.cheese_and_cracker.name=Cracker w/ Cheese
 tile.cheese.name=Cheese Block
 tile.jar.name=Glass Jar
