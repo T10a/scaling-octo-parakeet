@@ -3,6 +3,7 @@ package com.t10a.tutorial.blocks;
 import java.util.List;
 
 import com.t10a.tutorial.Reference;
+import com.t10a.tutorial.Tutorial;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -30,6 +31,7 @@ public class BlockJar extends Block {
 		super(Material.GLASS);
 		setUnlocalizedName(Reference.TutorialBlocks.JAR.getUnlocalizedName());
 		setRegistryName(Reference.TutorialBlocks.JAR.getRegistryName());
+		setCreativeTab(Tutorial.CREATIVE_TAB);
 	}
 	
 	@Override

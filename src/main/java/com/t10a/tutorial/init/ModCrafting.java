@@ -10,7 +10,6 @@ public class ModCrafting
 	{
 		GameRegistry.addShapedRecipe(new ItemStack(ModBlocks.cheese),"CCC","CCC","CCC",'C',ModItems.cheese);
 		GameRegistry.addShapedRecipe(new ItemStack(ModBlocks.jar), " C ","GGG","CCC",'C',Blocks.COAL_BLOCK,'G', new ItemStack(Blocks.STAINED_GLASS, 1, 0));
-		//GameRegistry.addShapelessRecipe(new ItemStack(ModItems.cheese_and_cracker), "C", "K", 'C', ModItems.cheese, 'K', ModItems.cracker);
 		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.cheese_and_cracker), new ItemStack(ModItems.cheese), new ItemStack(ModItems.cracker));
 	}
 }

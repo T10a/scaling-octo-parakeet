@@ -5,6 +5,7 @@ import com.t10a.tutorial.init.ModCrafting;
 import com.t10a.tutorial.init.ModItems;
 import com.t10a.tutorial.proxy.CommonProxy;
 
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -21,6 +22,8 @@ public class Tutorial
 	
 	@SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.SERVER_PROXY_CLASS)
 	public static CommonProxy proxy;
+	
+	public static final CreativeTabs CREATIVE_TAB = new TutorialTab();
 	
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event)
