@@ -4,6 +4,7 @@ import com.t10a.tutorial.init.ModBlocks;
 import com.t10a.tutorial.init.ModCrafting;
 import com.t10a.tutorial.init.ModItems;
 import com.t10a.tutorial.proxy.CommonProxy;
+import com.t10a.tutorial.tileentity.TileEntityJar;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.Mod;
@@ -13,6 +14,7 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 @Mod(modid=Reference.MOD_ID, name=Reference.NAME, version=Reference.VERSION, acceptedMinecraftVersions = Reference.ACCEPTED_VERSION)
 public class Tutorial 
@@ -41,7 +43,10 @@ public class Tutorial
 	{
 		System.out.println("Initialisation!");
 		proxy.init();
+		
 		ModCrafting.register();
+		
+		GameRegistry.registerTileEntity(TileEntityJar.class, Reference.MOD_ID + "TileEntityJar");
 	}
 	
 	@EventHandler
